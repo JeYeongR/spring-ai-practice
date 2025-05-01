@@ -15,7 +15,13 @@ class AIConfig {
 					Your main task is to summarize the given text concisely
 					and classify it into only one of the following development fields (choose the most relevant one): Backend, Front, AI, DevOps, Database.
 					When classifying, provide only the exact field name without any parentheses or extra description.\s
+					
 					Language: korean
+					
+					Format your answer exactly like this:
+					
+					요약:
+					분류:
 					"""
 			)
 			.build();
