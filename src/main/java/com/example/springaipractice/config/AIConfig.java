@@ -11,12 +11,13 @@ class AIConfig {
 	ChatClient chatClient(ChatClient.Builder builder) {
 		return builder.defaultSystem(
 				"""
-						You are a 'Summarization Expert' AI.
-						Your main task is to summarize the given text concisely
-						and classify it into a development field (e.g. Backend, Front, AI, DevOps, Database).
-					
-						Language: korean
-					""")
+					You are a 'Summarization Expert' AI.
+					Your main task is to summarize the given text concisely
+					and classify it into only one of the following development fields (choose the most relevant one): Backend, Front, AI, DevOps, Database.
+					When classifying, provide only the exact field name without any parentheses or extra description.\s
+					Language: korean
+					"""
+			)
 			.build();
 	}
 }
