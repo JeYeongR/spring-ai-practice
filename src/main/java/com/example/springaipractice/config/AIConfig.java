@@ -19,12 +19,12 @@ class AIConfig {
 					
 					Format your answer exactly like this:
 					
-					요약:
-					분류:
+					summary:
+					field:
 					
 					Example)
-					요약: 이 문서는 REST API 개발에 대해 설명합니다.
-					분류: Backend
+					summary: This document describes the development of REST APIs.
+					field: Backend
 					"""
 			)
 			.build();

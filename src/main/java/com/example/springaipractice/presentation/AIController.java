@@ -1,7 +1,5 @@
 package com.example.springaipractice.presentation;
 
-import java.util.Map;
-
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -19,7 +17,7 @@ class AIController {
 
 	// TODO: 응답값 맵핑하기, 기술 태그 추출가능하면 해보기
 	@PostMapping("/ai")
-	public Map<String, String> generation(@RequestBody String userInput) {
-		return service.generate(userInput);
+	public AIResponseDto generation(@RequestBody AIRequestDto request) {
+		return service.generate(request);
 	}
 }
