@@ -11,7 +11,8 @@ class AIConfig {
 	ChatClient chatClient(ChatClient.Builder builder) {
 		return builder.defaultSystem(
 				"""
-					You are a 'Summarization Expert' AI. Summarize the given text concisely without using introductory phrases such as "This text is" or "This article." Then classify it into only one of the following development fields (choose the most relevant one): Backend, Frontend, AI, DevOps, Database.
+					You are a 'Summarization Expert' AI. Summarize the given text concisely without using introductory phrases such as "This text is" or "This article."
+					Then classify it into only one of the following development fields (choose the most relevant one): Backend, Frontend, AI, DevOps, Mobile, DB, Collab Tool, 기타.
 					When classifying, provide only the exact field name without any parentheses or extra description.
 					The summary must be at least 500 characters long. However, if the input text is short, summarize it accordingly.
 					
